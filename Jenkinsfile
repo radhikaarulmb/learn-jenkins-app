@@ -24,7 +24,6 @@ pipeline {
             steps{
                 echo 'Test stage'
                 sh'''
-                    find /workspaces/learn-jenkins-app/build -name index.html
                     npm test
                 '''
             }
